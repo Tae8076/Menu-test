@@ -1,22 +1,183 @@
-<!-- 예시 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>카페 메뉴판</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--다른 스크린 사이즈의 모바일 환경에서도 균일하게 보이게 -->
+  <title>Seed & Seed menu item</title> <!--사이트 제목 -->
   <style>
-    body { font-family: sans-serif; text-align: center; background: #fff5e0; }
-    .menu { max-width: 1000px; margin: auto; }
-    h1 { color: #cc6600; }
-    .item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ccc; }
+    body {
+      font-family: sans-serif; /*폰트*/
+      text-align: center; /*글씨를 센터로*/
+      background: #fff5e0; /*배경 색*/
+      box-sizing: border-box; /*레이아웃 유지*/
+    }
+
+    .menu {
+      max-width: 480px; /*메뉴 최대크기*/
+      margin: 0 auto;
+      line-height: 1.6;
+      padding: 0 15px;	
+    }
+    h1 {
+      color: #cc6600;
+      font-size: 1.5em;
+    }
+    h1 img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+    .item-container { /*부가 설명 칸*/
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* 세로 중앙 정렬 */
+      font-size: 1.1em;
+    }
+    .item-name { /*메뉴 이름*/
+      flex-grow: 1;
+      text-align: left;
+    }
+    .item-price { /*메뉴 가격*/
+      white-space: nowrap;
+      margin-left: 10px;
+    }
+
+    /* 화살표 파트(css) */
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 6px solid #555;
+      border-top: 6px solid transparent; /* 아래를 가리키는 화살표 */
+      border-bottom: 6px solid transparent;
+      margin-right: 10px;
+      margin-left: 10px;
+      transition: transform 0.3s ease; /* 화살표 회전 애니메이션 */
+    }
+    .item-container.active .arrow {
+      transform: rotate(90deg); /* active 클래스일 때 180도 회전 */
+    }
+
+    /* 설명 텍스트 애니메이션 */
+    .description-wrapper { /* 설명 텍스트를 감싸는 래퍼 */
+      max-height: 0; /* 기본적으로 높이를 0으로 설정하여 숨김 */
+      overflow: hidden; /* 내용이 넘치면 숨김 */
+      transition: max-height 0.4s ease-out; /* 높이 변화 애니메이션 */
+      
+    }
+    .item-container.active .description-wrapper {
+      max-height: 500px; /* 열릴 때 최대 높이 (내용에 따라 조절) */	
+    }
+    .description {
+      font-size: 0.9em;
+      color: #555;
+      text-align: left;
+      padding-top: 10px; /* 설명 텍스트 내부 여백 */
+      padding-bottom: 5px; 
+    }
   </style>
 </head>
 <body>
   <div class="menu">
-    <h1> <img src="seasonglass.jpg" alt="로고" style="height: 200px; vertical-align: middle; margin-right: 40px;">Seasonglass Menu</h1>
-    <div class="item"><span>Wild Ochard Tea</span><span>3,000원</span></div>
-    <div class="item"><span>Summer Tea Beverage</span><span>3,500원</span></div>
-    <div class="item"><span>Wild Ochard Dairy</span><span>4,500원</span></div>
+    <h1><img src="seed&seed_logo.png">Seed & Seed And 123 DOUGH Menu</h1> <!--로고 및 로고 아래 텍스트-->
+
+    <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Ade (Lemon, Grapefruit, Prickly pear) </span>
+        <span class="item-price">3,000 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+	  <img src="Green_tea_lemonade.jpg" height="240" width: auto>
+ 	  <img src="Grapefruit_ade.jpg" height="240" width: auto>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Ssanghwa milk tea</span>
+        <span class="item-price">3,500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <img src="Ssanghwa_milk tea.png" height="290" width: auto>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Stir-fried shrimp with Sourdough noodle</span>
+        <span class="item-price">4,500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <img src="Stir-fried_shrimp_Sourdough_noodle.jpg" height="290" width: auto>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Sourdough bibim noodle</span>
+        <span class="item-price">3,500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <img src="Sourdough_bibim noodle.jpg" height="290" width: auto>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Sourdough doughnuts(Plain, Chocolate, Sinamon, Green tea)</span>
+        <span class="item-price">3,500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <img src="Sourdough_doughnuts.jpg" height="290" width: auto>
+        </div>
+      </div>
+    </div>
+
+     <div class="item-container">
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Fried dishes</span>
+        <span class="item-price">3,500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <script>
+    const itemContainers = document.querySelectorAll('.item-container');
+
+    itemContainers.forEach(container => {
+      container.addEventListener('click', () => {
+        // 'active' 클래스를 토글합니다.
+        // 이 클래스가 화살표 회전과 설명 표시를 제어합니다.
+        container.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
