@@ -19,8 +19,14 @@
       padding: 0 15px;	
     }
     h1 {
-      color: #cc6600;
       font-size: 1.5em;
+      display: flex;
+      align-items: center; /* 세로 중앙 정렬 */
+      justify-content: center; /* 가로 중앙 정렬 (선택 사항, 필요에 따라 조정) */
+      text-align: left; /* 텍스트 정렬은 이 요소에서 직접하지 않고 텍스트를 감싸는 span에서 */
+      line-height: 1.2; /* 줄 간격 조절 */
+      margin-bottom: 20px;
+      font-family: sans-serif;
     }
     h1 img {
       max-width: 100%;
@@ -81,11 +87,20 @@
       padding-top: 10px; /* 설명 텍스트 내부 여백 */
       padding-bottom: 5px; 
     }
+   .description img {
+  max-width: 100%;       /* 부모 요소(description)의 너비를 넘지 않도록 설정 (가장 중요!) */
+  height: auto;          /* 가로 비율에 맞춰 높이 자동 조절 (이미지가 찌그러지지 않게 함) */
+  max-height: 290px;     /* 이미지의 최대 높이를 170px로 제한 (선택 사항, 필요에 따라 조절) */
+}
+  .description img.exception-height { 
+  max-height: 170px;
+}
   </style>
 </head>
 <body>
   <div class="menu">
-    <h1><img src="seed&seed_logo.png">Seed & Seed And 123 DOUGH Menu</h1> <!--로고 및 로고 아래 텍스트-->
+    <h1><img src="seed&seed_logo.png" color: #cc6600;></h1>
+    <span class="title-text">Seed & Seed And 123 DOUGH Menu</span> <!--로고 및 로고 아래 텍스트-->
 
     <div class="item-container"> <!--에이드-->
       <div class="item">
@@ -95,8 +110,8 @@
       </div>
       <div class="description-wrapper">
         <div class="description">
-	  <img src="Green_tea_lemonade.jpg"  height="170" width: auto>
- 	  <img src="Grapefruit_ade.jpg" height="170" width: auto>
+	  <img src="Green_tea_lemonade.jpg"  class="exception-height">
+ 	  <img src="Grapefruit_ade.jpg" class="exception-height">
         </div>
       </div>
     </div>
