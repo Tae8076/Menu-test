@@ -11,28 +11,29 @@
       background: #fff5e0; /*배경 색*/
       box-sizing: border-box; /*레이아웃 유지*/
     }
-
+ 
     .menu {
       max-width: 480px; /*메뉴 최대크기*/
       margin: 0 auto;
       line-height: 1.6;
       padding: 0 15px;	
     }
-    h1 {
-      font-size: 1.5em;
-      display: flex;
-      align-items: center; /* 세로 중앙 정렬 */
-      justify-content: center; /* 가로 중앙 정렬 (선택 사항, 필요에 따라 조정) */
-      text-align: left; /* 텍스트 정렬은 이 요소에서 직접하지 않고 텍스트를 감싸는 span에서 */
-      line-height: 1.2; /* 줄 간격 조절 */
-      margin-bottom: 20px;
-      font-family: sans-serif;
-    }
+    .title-text { /*제목 텍스트*/
+            color: #cc6600;
+	    font-size: 1.5em;
+    	    font-family: sans-serif;
+	    font-weight: bold;
+	    margin-bottom: 20px;
+  	    display: flex;
+            align-items: center; /* 세로 중앙 정렬 */
+	    line-height: 1.2;
+	    justify-content: center;
+
+     }
     h1 img {
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto 15px;
     }
     .item-container { /*부가 설명 칸*/
       border-bottom: 1px solid #ccc;
@@ -99,7 +100,7 @@
 </head>
 <body>
   <div class="menu">
-    <h1><img src="seed&seed_logo.png" color: #cc6600;></h1>
+    <h1><img src="seed&seed_logo.png"></h1>
     <span class="title-text">Seed & Seed And 123 DOUGH Menu</span> <!--로고 및 로고 아래 텍스트-->
 
     <div class="item-container"> <!--에이드-->
