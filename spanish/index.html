@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--다른 스크린 사이즈의 모바일 환경에서도 균일하게 보이게 -->
   <title>Seed & Seed menú</title> <!--사이트 제목 -->
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet"> <!--폰트 설정 -->
   <style>
     body {
       font-family: 'Noto Sans', sans-serif; /*폰트*/
+      font-weight: 500; /*폰트 굵기*/
       text-align: center; /*글씨를 센터로*/
       background: #fff5e0; /*배경 색*/
       box-sizing: border-box; /*레이아웃 유지*/
@@ -87,6 +89,7 @@
       text-align: left;
       padding-top: 10px; /* 설명 텍스트 내부 여백 */
       padding-bottom: 5px; 
+      text-align: center;
     }
    .description img {
   max-width: 100%;       /* 부모 요소(description)의 너비를 넘지 않도록 설정 (가장 중요!) */
@@ -106,13 +109,28 @@
     <div class="item-container"> <!--에이드-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Limonada (Limón, Toronja, Tuna) </span>
-        <span class="item-price">3,000 ₩</span>
+        <span class="item-name">Limonada de té verde, Limonada de toronja </span>
+        <span class="item-price">5,500 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
 	  <img src="Green_tea_lemonade.jpg"  class="exception-height">
+    <p>Ingrediente principal: Jugo de limón, Té verde en polvo, Agua con gas</p>
  	  <img src="Grapefruit_ade.jpg" class="exception-height">
+    <p>Ingrediente principal: Jarabe de toronja, Agua con gas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--핑크원-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Limonada de tuna </span>
+        <span class="item-price">6,000 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <p>Ingrediente principal: Concentrado de tuna, Jarabe, Agua con gas</p>
         </div>
       </div>
     </div>
@@ -121,12 +139,13 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Té Ssanghwa con leche</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">8,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
           <div style="text-align: center;">
           <img src="Ssanghwa_milk tea.png" height="290" width: auto>
+          <p>Ingrediente principal: Ssanghwa té, Ssanghwa jarabe, Leche</p>
           </div>
         </div>
       </div>
@@ -135,12 +154,13 @@
     <div class="item-container"> <!--새우면-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Fideos de masa madre con camarones salteados 🔥</span>
-        <span class="item-price">4,500 ₩</span>
+        <span class="item-name">Fideos de masa madre con camarones salteados </span>
+        <span class="item-price">15,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
           <img src="Stir-fried_shrimp_Sourdough_noodle.jpg" height="200" width: auto>
+          <p>Ingrediente principal: Fideos de masa madre, Camarón, Col, Cebolla, Zanahoria</p>
         </div>
       </div>
     </div>
@@ -148,12 +168,13 @@
     <div class="item-container"> <!--비빔면-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Bibim fideos de masa madre 🔥🔥</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-name">Bibim fideos de masa madre 🔥</span>
+        <span class="item-price">12,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
           <img src="Sourdough_bibim noodle.jpg" height="200" width: auto>
+          <p>Ingrediente principal: Fideos de masa madre, Pepino, Col, Zanahoria, Salsa Bibim</p>
         </div>
       </div>
     </div>
@@ -162,7 +183,7 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Donas de masa madre (natural, chocolate, canela, té verde)</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">12,000 ₩<br>Con cobertura<br>+ 2,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
@@ -175,11 +196,70 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Pollo frito con masa madre</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">Entero: 38,000 ₩<br>Medio: 22,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
-          
+          <p>Ingrediente principal: Harina de granos ancestrales, Masa madre, Pollo orgánico</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (철판면 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Menú fijo(Fideos de masa madre con camarones salteados + Limonada)</span>
+        <span class="item-price">20,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Stir-fried_shrimp_Sourdough_noodle.jpg" height="200" width: auto>
+          <p>Ingrediente principal: Fideos de masa madre, Camarón, Col, Cebolla, Zanahoria</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (도넛 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Menú fijo(Donas de masa madre (natural, chocolate, canela, té verde) + Limonada)</span>
+        <span class="item-price">17,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Sourdough_doughnuts.jpg" height="290" width: auto>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (비빔면 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Menú fijo(Bibim fideos de masa madre + Limonada)</span>
+        <span class="item-price">17,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Sourdough_bibim noodle.jpg" height="200" width: auto>
+          <p>Ingrediente principal: Fideos de masa madre, Pepino, Col, Zanahoria, Salsa Bibim</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--피클-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Pepinillo</span>
+        <span class="item-price">500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
         </div>
       </div>
     </div>
