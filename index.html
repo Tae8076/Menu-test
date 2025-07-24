@@ -86,7 +86,8 @@
       color: #555;
       text-align: left;
       padding-top: 10px; /* 설명 텍스트 내부 여백 */
-      padding-bottom: 5px; 
+      padding-bottom: 5px;
+      text-align: center;
     }
    .description img {
   max-width: 100%;       /* 부모 요소(description)의 너비를 넘지 않도록 설정 (가장 중요!) */
@@ -106,13 +107,30 @@
     <div class="item-container"> <!--에이드-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Ade (Lemon, Grapefruit, Prickly pear) </span>
-        <span class="item-price">3,000 ₩</span>
+        <span class="item-name">Green tea lemonade, Grapefruit ade </span>
+        <span class="item-price">5,500 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
+          <div style="text-align: center;">
 	  <img src="Green_tea_lemonade.jpg"  class="exception-height">
+    <p>Main ingredient: Lemon juice, Green tea powder, Sparkling water</p>
  	  <img src="Grapefruit_ade.jpg" class="exception-height">
+    <p>Main ingredient: Grapefruit syrup, Sparkling water</p>
+    </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--핑크원-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Prickly pear ade </span>
+        <span class="item-price">6,000 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <p>Main ingredient: Prickly pear concentrate, Syrup, Sparkling water</p>
         </div>
       </div>
     </div>
@@ -121,7 +139,7 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Ssanghwa milk tea</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">8,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
@@ -131,16 +149,17 @@
         </div>
       </div>
     </div>
-
+    
     <div class="item-container"> <!--새우면-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Stir-fried shrimp Sourdough noodle 🔥</span>
-        <span class="item-price">4,500 ₩</span>
+        <span class="item-name">Stir-fried shrimp Sourdough noodle </span>
+        <span class="item-price">15,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
           <img src="Stir-fried_shrimp_Sourdough_noodle.jpg" height="200" width: auto>
+          <p>Main ingredient: Sourdough noodle, Shrimp, Cabbage, Onion, Carrot</p>
         </div>
       </div>
     </div>
@@ -148,12 +167,13 @@
     <div class="item-container"> <!--비빔면-->
       <div class="item">
         <div class="arrow"></div>
-        <span class="item-name">Sourdough bibim noodle 🔥🔥</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-name">Sourdough bibim noodle 🔥</span>
+        <span class="item-price">12,000 ₩</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
           <img src="Sourdough_bibim noodle.jpg" height="200" width: auto>
+          <p>Main ingredient: Sourdough noodle, Cucumber, Cabbage, Carrot, Bibim seasoning sauce</p>
         </div>
       </div>
     </div>
@@ -162,11 +182,13 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Sourdough doughnuts(Plain, Chocolate, Sinamon, Green tea)</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">12,000 ₩ (With topping: + 2,000 ₩)</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
+          <div style="text-align: center;">
           <img src="Sourdough_doughnuts.jpg" height="290" width: auto>
+          </div>
         </div>
       </div>
     </div>
@@ -175,11 +197,72 @@
       <div class="item">
         <div class="arrow"></div>
         <span class="item-name">Sourdough Fried Chicken</span>
-        <span class="item-price">3,500 ₩</span>
+        <span class="item-price">Whole: 38,000 ₩, Half: 22,000</span>
       </div>
       <div class="description-wrapper">
         <div class="description">
-          
+          <div style="text-align: center;">
+          <p>Main ingredient: Ancient grain flour, Sourdough starter, Organic chicken</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (철판면 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Set menu(Stir-fried shrimp Sourdough noodle + Ade)</span>
+        <span class="item-price">20,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Stir-fried_shrimp_Sourdough_noodle.jpg" height="200" width: auto>
+          <p>Main ingredient: Sourdough noodle, Shrimp, Cabbage, Onion, Carrot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (도넛 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Set menu(Sourdough doughnuts(Plain, Chocolate, Sinamon, Green tea) + Ade)</span>
+        <span class="item-price">17,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Sourdough_doughnuts.jpg" height="290" width: auto>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--세트메뉴 (비빔면 + 에이드)-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Set menu(Sourdough bibim noodle + Ade)</span>
+        <span class="item-price">17,000 ₩ </span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
+          <div style="text-align: center;">
+          <img src="Sourdough_bibim noodle.jpg" height="200" width: auto>
+          <p>Main ingredient: Sourdough noodle, Cucumber, Cabbage, Carrot, Bibim seasoning sauce</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container"> <!--피클-->
+      <div class="item">
+        <div class="arrow"></div>
+        <span class="item-name">Pickle</span>
+        <span class="item-price">500 ₩</span>
+      </div>
+      <div class="description-wrapper">
+        <div class="description">
         </div>
       </div>
     </div>
